@@ -4,6 +4,8 @@ currentdir = os.path.dirname(os.path.realpath(__file__))
 parentdir = os.path.dirname(currentdir)
 sys.path.append(parentdir)
 
+cdr = os.path.dirname(__file__)
+os.chdir(cdr)
 
 cpi_filename = "cp_xnn/cp_info.text"
 if not os.path.isfile(cpi_filename):

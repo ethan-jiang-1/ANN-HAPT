@@ -60,6 +60,10 @@ model = pickle_model
 # model.fit(rx_train, ry_train)
 label=model.predict(rx_test)
 
+
+cdr = os.path.dirname(__file__)
+os.chdir(cdr)
+
 import pickle
 pkl_filename = "ps_model.pkl"
 with open(pkl_filename, 'wb') as file:

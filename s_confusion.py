@@ -13,7 +13,6 @@ def print_confusion_report(ry_pred, ry_test, labels):
     print("f1_score:\t {:.4f}%".format(
         100 * metrics.f1_score(ry_test, ry_pred, average="weighted")))
 
-
     print("\n")
     print(classification_report(ry_pred, ry_test, target_names=[lb for lb in labels.values()]))
     print("\n")
