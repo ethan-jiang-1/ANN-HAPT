@@ -45,11 +45,12 @@ model = MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1
        shuffle=True, solver='adam', tol=0.0001, validation_fraction=0.1,
        verbose=True, warm_start=False)
 
+print(model)
 model.fit(rx_train, ry_train)
 label=model.predict(rx_test)
 
 
-print(classification_report(label, ry_test, digits=4,  target_names=[lb for lb in labels.values()]))
+print(classification_report(label, ry_test, digits=4, target_names=[lb for lb in labels.values()]))
 
 conf_mat = confusion_matrix(label, ry_test)
 
