@@ -25,9 +25,9 @@ with open(cpi_filename, 'r') as file:
 
 print("CPI", test_num, feature_num, skip_ratio, model_name)
 
-import s_data_loader as data_loader
+import s_data_loader_sub as data_loader
 # dt = data_loader.load_feature_time()
-dt = data_loader.load_feature()
+dt = data_loader.load_feature_subx()
 
 # Mapping table for classes
 labels = dt.labels
