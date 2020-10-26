@@ -1,4 +1,4 @@
-class MLPClassifierSimple {
+class MLPClassifierStudy {
 
     private enum Activation { IDENTITY, LOGISTIC, RELU, TANH, SOFTMAX }
 
@@ -11,7 +11,7 @@ class MLPClassifierSimple {
     private double[] _nt0;
     private double[] _nt1;
 
-    public MLPClassifierSimple(double[][] weights, double[] bias) {
+    public MLPClassifierStudy(double[][] weights, double[] bias) {
         //this._hidden = Activation.valueOf(hidden.toUpperCase());
         //this._output = Activation.valueOf(output.toUpperCase());
 
@@ -231,7 +231,7 @@ class MLPClassifierSimple {
         }
 
         // Prediction:
-        MLPClassifierSimple clf = new MLPClassifierSimple(weights, bias);
+        MLPClassifierStudy clf = new MLPClassifierStudy(weights, bias);
         
         int estimation_1 = clf.predict(features);
         System.out.println(estimation_1);
