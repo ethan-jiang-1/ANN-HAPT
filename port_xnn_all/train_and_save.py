@@ -1,8 +1,6 @@
 from sklearn.neural_network import MLPClassifier
 
 from dataset_loader import load_dataset
-
-
 rx_train, ry_train, rx_test, ry_test, labels, skip_ratio = load_dataset()
 
 

@@ -5,7 +5,11 @@ parentdir = os.path.dirname(currentdir)
 sys.path.append(parentdir)
 
 cdr = os.path.dirname(__file__)
-os.chdir(cdr)
+if len(cdr) != 0:
+    os.chdir(cdr)
+
+from dataset_loader import load_dataset
+rx_train, ry_train, rx_test, ry_test, labels, skip_ratio = load_dataset()
 
 cpi_filename = "cp_xnn/cp_info.text"
 if not os.path.isfile(cpi_filename):
@@ -19,12 +23,6 @@ with open(cpi_filename, 'r') as file:
     model_name = file.readline()
 
 print("CPI", cpi_filename, test_num, feature_num, skip_ratio, model_name)
-
-import s_data_loader as data_loader
-dt = data_loader.load_feature()
-labels = dt.labels
-y_test = dt.y_test
-ry_test = y_test[::skip_ratio]
 
 
 cpe_filename = "cp_xnn/MLPClassifier.class"
