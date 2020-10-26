@@ -65,7 +65,7 @@ class DataSrc(object):
         self.y_train = np.array(self.y_train)
 
     def _transform(self):
-        self._transfrim_trim()
+        self._transform_trim()
 
         # Convert to numpy for efficiency
         self.x_train = np.array(self.x_train)
@@ -77,7 +77,7 @@ class DataSrc(object):
     def _transform_merge(self):
         pass
 
-    def _transfrim_trim(self):
+    def _transform_trim(self):
         #trunk or not 
         for x in self.x_train_file:
             tmp = [float(ts) for ts in x.split()]

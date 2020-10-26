@@ -96,7 +96,7 @@ class DataSrc(object):
         if self.dt_type == "raw_acc_o":
             self._transform_merge()
         else:
-            self._transfrim_trim()
+            self._transform_trim()
 
         # Convert to numpy for efficiency
         self.x_train = np.array(self.x_train)
@@ -159,7 +159,7 @@ class DataSrc(object):
                 tlo.append(ox)
             self.x_test.append(tlo)
 
-    def _transfrim_trim(self):
+    def _transform_trim(self):
         #trunk or not 
         for x in self.x_train_file:
             tmp = [float(ts) for ts in x.split()]
