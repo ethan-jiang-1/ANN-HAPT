@@ -1,0 +1,13 @@
+[Parallel(n_jobs=-1)]: Done  48 out of  48 | elapsed:  2.7min finished
+                    precision    recall  f1-score   support
+
+           WALKING       0.99      0.96      0.98       514
+  WALKING UPSTAIRS       0.96      0.97      0.97       466
+WALKING DOWNSTAIRS       0.97      0.99      0.98       409
+           SITTING       0.89      0.97      0.93       448
+          STANDING       0.98      0.91      0.94       573
+            LAYING       1.00      1.00      1.00       537
+
+          accuracy                           0.97      2947
+         macro avg       0.96      0.97      0.97      2947
+      weighted avg       0.97      0.97      0.97      2947

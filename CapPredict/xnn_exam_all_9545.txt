@@ -1,0 +1,13 @@
+Training loss did not improve more than tol=0.000100 for 10 consecutive epochs. Stopping.
+                    precision    recall  f1-score   support
+
+           WALKING     0.9919    0.9371    0.9638       525
+  WALKING UPSTAIRS     0.9342    0.9670    0.9503       455
+WALKING DOWNSTAIRS     0.9667    0.9902    0.9783       410
+           SITTING     0.8737    0.9597    0.9147       447
+          STANDING     0.9662    0.8893    0.9261       578
+            LAYING     0.9907    1.0000    0.9953       532
+
+          accuracy                         0.9545      2947
+         macro avg     0.9539    0.9572    0.9548      2947
+      weighted avg     0.9563    0.9545    0.9546      2947

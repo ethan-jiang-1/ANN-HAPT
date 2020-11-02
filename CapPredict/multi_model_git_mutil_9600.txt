@@ -1,0 +1,6 @@
+https://github.com/liushiyu1994/human_activity_detection
+
+configuable low-level tensorflow layers..
+
+.9700
+
