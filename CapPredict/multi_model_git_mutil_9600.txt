@@ -1,6 +1,30 @@
-https://github.com/liushiyu1994/human_activity_detection
+https://github.com/saicharanarishanapally/Human-activity-detection
 
 configuable low-level tensorflow layers..
 
-.9700
-
+Logistic Regression with Grid Search
+| Accuracy |
+0.9630132337970818
+Linear SVC with GridSearch
+| Accuracy |
+0.9681031557516118
+RBF Kernel SVM with GridSearch
+| Accuracy |
+0.9626739056667798
+Decision Tree with GridSearch
+| Accuracy |
+0.8635900916185952
+Random Forest Classifier with GridSearch
+| Accuracy |
+0.9121140142517815
+Gradient Boosted Decision Trees With GridSearch
+| Accuracy |
+0.9226331862911435
+Using LSTM Layers
+LSTM Layers Neurons in LSTM Layer   Dropout Best Epoch
+    2      |              32        |   0.50     |     10     
+    2      |              48        |   0.50     |     7      
+    2      |              64        |   0.50     |     9      
+    2      |              32        |   0.70     |     9     
+    2      |              48        |   0.70     |     16    
+    2      |              64        |   0.70     |     7     
